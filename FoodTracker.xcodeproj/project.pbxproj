@@ -47,6 +47,7 @@
 		F575557722E74BF900BFB456 /* FoodTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F575557B22E74BF900BFB456 /* FoodTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerUITests.swift; sourceTree = "<group>"; };
 		F575557D22E74BF900BFB456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F575558922E756C600BFB456 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		F575554F22E74BF700BFB456 = {
 			isa = PBXGroup;
 			children = (
+				F575558922E756C600BFB456 /* README.md */,
 				F575555A22E74BF700BFB456 /* FoodTracker */,
 				F575556F22E74BF900BFB456 /* FoodTrackerTests */,
 				F575557A22E74BF900BFB456 /* FoodTrackerUITests */,
