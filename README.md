@@ -13,5 +13,11 @@ iOS 官方教程：[Start Developing iOS Apps (Swift)](https://developer.apple.c
     - [x] 添加 action
     - [x] 委托：[Swift - 委托（delegate）的介绍，及使用样例](http://www.hangge.com/blog/cache/detail_810.html)
 - [ ] ViewController
+    - 调用 `UIViewController` 方法的流程：
+        1. `viewDidLoad()`
+        2. `viewWillAppear()`
+        3. `viewDidAppear()`
+        4. `viewWillDisappear()`
+        5. `viewDidDisappear()`
 - [ ] 实现自定义控件
 - [ ] 定义数据模型
