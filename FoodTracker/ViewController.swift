@@ -60,6 +60,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         nameTextField.text = "Default Text"
     }
     
+    // 手势识别的单点操作触发
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
             // This code ensures that if the user taps the image view while typing in the text field, the keyboard is dismissed properly.
             // Hide the keyboard.
@@ -72,7 +73,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
             imagePickerController.sourceType = .photoLibrary // 已知枚举类型的缩写
             
             // Make sure ViewController is notified when the user picks an image.
-            imagePickerController.delegate = self
+            imagePickerController.delegate = self // 委托
             present(imagePickerController, animated: true, completion: nil)
     }
 }
