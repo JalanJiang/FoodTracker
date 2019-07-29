@@ -32,7 +32,9 @@ iOS 官方教程：[Start Developing iOS Apps (Swift)](https://developer.apple.c
         - 在检查器中访问自定义属性值：[IBInspectable / IBDesignable](https://nshipster.cn/ibinspectable-ibdesignable/)
         - 属性观察者（触发器）：[属性观察](https://swifter.tips/property-observer/)
     - [x] 在 Button 上添加星星按钮
-    - [ ] 实现 Button Action
+    - [x] 实现 Button Action
+        - 变更按钮的状态
+        - [x] 添加辅助功能信息（无障碍使用）：[带你认识——iOS Accessibility](https://www.jianshu.com/p/0991a4f0bc0c)
 - [ ] 定义数据模型
 
 ## 一些零散的语法
