@@ -62,7 +62,7 @@ import UIKit
         let highlightedStar = UIImage(named: "highlightStar", in: bundle, compatibleWith: self.traitCollection)
         
         // 循环创建 5 个按钮
-        for _ in 0..<starCount {
+        for index in 0..<starCount {
             // Create the button
             let button = UIButton()
             // button.backgroundColor = UIColor.red
@@ -79,6 +79,9 @@ import UIKit
             button.heightAnchor.constraint(equalToConstant: starSize.height).isActive = true // 高度约束
             button.widthAnchor.constraint(equalToConstant: starSize.height).isActive = true // 宽度约束
             
+            // Set the accessibility label
+            button.accessibilityLabel = "Set \(index + 1) star rating"
+            
             // Setup the button action
             button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchUpInside)
             
@@ -87,6 +90,7 @@ import UIKit
             
             // Add the new button to the rating button array
             ratingButtons.append(button)
+            
         }
         
         // 添加按钮后根据评分更新按钮状态
@@ -120,6 +124,29 @@ import UIKit
         for (index, button) in ratingButtons.enumerated() {
             // If the index of a button is less than the rating, that button should be selected.
             button.isSelected = index < rating
+            
+            // Set the hint string for the currently selected star
+            let hintString: String?
+            if rating == index + 1 {
+                hintString = "Tap to reset the rating to zero."
+            } else {
+                hintString = nil
+            }
+            
+            // Calculate the value string
+            let valueString: String
+            switch (rating) {
+            case 0:
+                valueString = "No rating set."
+            case 1:
+                valueString = "1 star set."
+            default:
+                valueString = "\(rating) stars set."
+            }
+            
+            // Assign the hint string and value string
+            button.accessibilityHint = hintString
+            button.accessibilityValue = valueString
         }
     }
 }
