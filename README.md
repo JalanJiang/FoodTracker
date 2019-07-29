@@ -28,7 +28,11 @@ iOS 官方教程：[Start Developing iOS Apps (Swift)](https://developer.apple.c
         - 初始化视图：以编程方式 & 以 storyboard 方式
         - 显示视图：配置 Identity inspector -> Class
         - 向视图添加按钮：创建按钮、修改按钮属性、为按钮添加 Action、添加按钮到视图
-    - [ ] 添加对 Interface Builder 的支持
+    - [x] 添加对 Interface Builder 的支持
+        - 在检查器中访问自定义属性值：[IBInspectable / IBDesignable](https://nshipster.cn/ibinspectable-ibdesignable/)
+        - 属性观察者（触发器）：[属性观察](https://swifter.tips/property-observer/)
+    - [x] 在 Button 上添加星星按钮
+    - [ ] 实现 Button Action
 - [ ] 定义数据模型
 
 ## 一些零散的语法
@@ -41,3 +45,4 @@ iOS 官方教程：[Start Developing iOS Apps (Swift)](https://developer.apple.c
 - [How do I use the updated UIImagePickerControllerDelegate iOS 12 API?](https://stackoverflow.com/questions/51182701/how-do-i-use-the-updated-uiimagepickercontrollerdelegate-ios-12-api)
 - 点击手势无反应：[GestureRecognizer not responding to tap](https://stackoverflow.com/questions/26028455/gesturerecognizer-not-responding-to-tap)
 - 使用 `#selector` 报错：['#selector' refers to a method that is not exposed to Objective-C](https://stackoverflow.com/questions/36818083/selector-refers-to-a-method-that-is-not-exposed-to-objective-c)
+- [It’s time to stop using index(of:)](https://www.hackingwithswift.com/articles/177/its-time-to-stop-using-index-of)
