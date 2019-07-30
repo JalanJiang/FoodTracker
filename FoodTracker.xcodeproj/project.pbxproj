@@ -15,6 +15,7 @@
 		F575556622E74BF800BFB456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F575556422E74BF800BFB456 /* LaunchScreen.storyboard */; };
 		F575557122E74BF900BFB456 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F575557022E74BF900BFB456 /* FoodTrackerTests.swift */; };
 		F575557C22E74BF900BFB456 /* FoodTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F575557B22E74BF900BFB456 /* FoodTrackerUITests.swift */; };
+		F589767722F043D90093DA87 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F589767622F043D90093DA87 /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		F575557B22E74BF900BFB456 /* FoodTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerUITests.swift; sourceTree = "<group>"; };
 		F575557D22E74BF900BFB456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F575558922E756C600BFB456 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F589767622F043D90093DA87 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		F575555A22E74BF700BFB456 /* FoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				F589767622F043D90093DA87 /* Meal.swift */,
 				F575555B22E74BF700BFB456 /* AppDelegate.swift */,
 				F575555D22E74BF700BFB456 /* ViewController.swift */,
 				F5675B1B22EAFACC0050D58C /* RatingControl.swift */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F589767722F043D90093DA87 /* Meal.swift in Sources */,
 				F575555E22E74BF700BFB456 /* ViewController.swift in Sources */,
 				F5675B1C22EAFACC0050D58C /* RatingControl.swift in Sources */,
 				F575555C22E74BF700BFB456 /* AppDelegate.swift in Sources */,
