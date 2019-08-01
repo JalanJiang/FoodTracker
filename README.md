@@ -4,7 +4,12 @@ iOS 官方教程：[Start Developing iOS Apps (Swift)](https://developer.apple.c
 
 ## 知识点
 
+### Getting Started
+
 - [x] 认识 Xcode
+
+### Building the UI
+
 - [x] 构建 UI
     - [x] StoryBoard
     - [x] Auto Layout
@@ -40,6 +45,20 @@ iOS 官方教程：[Start Developing iOS Apps (Swift)](https://developer.apple.c
 - [ ] 定义数据模型
     - [x] 创建数据模型
     - [ ] 测试数据
+    
+### Working with Table Views
+
+- [x] 创建 Table View
+    - [x] Table View Controller 拖入 StoryBoard
+    - [x] 设计表格 Cell
+    - [x] Cell 与 代码关联
+    - [x] 加载初始数据
+        - 创建 MealTableViewController.swift
+    - [x] 显示数据
+        - `func numberOfSections(in tableView: UITableView) -> Int`
+        - `func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int`
+        - `func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell`
+    - [x] 实现导航
 
 ## 一些零散的语法
 
