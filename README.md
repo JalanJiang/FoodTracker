@@ -58,7 +58,13 @@ iOS 官方教程：[Start Developing iOS Apps (Swift)](https://developer.apple.c
         - `func numberOfSections(in tableView: UITableView) -> Int`
         - `func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int`
         - `func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell`
-    - [x] 实现导航
+- [ ] 实现导航
+    - [x] 添加 Segue - Editor > Embed In > Navigation Controller
+    - [x] 配置导航
+        - Bar Button Item object - 通过拖拽可完成场景切换
+        - 修改 Segue：修改动画 & 填写 Identifier
+        - 添加 Cancel / Save / Add Button
+
 
 ## 一些零散的语法
 
