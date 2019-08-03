@@ -112,16 +112,26 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="HOA-hj-XVb">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lzw-9i-Xco"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="dNa-0J-Sh4"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lzw-9i-Xco">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="4be-mN-0tG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="dNa-0J-Sh4">
+                            <connections>
+                                <segue destination="TZz-CS-WWv" kind="unwind" unwindAction="unwindToMealListWithSender:" id="97C-59-BYq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="7Z9-vZ-5Co" id="F4V-Vh-wVm"/>
                         <outlet property="photoImageView" destination="DeF-cx-aU0" id="iJ1-gD-00I"/>
                         <outlet property="ratingControl" destination="6Xu-xU-9eH" id="cTQ-l8-Mjr"/>
+                        <outlet property="saveButton" destination="dNa-0J-Sh4" id="1qN-NO-r0C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="TZz-CS-WWv" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="3aW-Ok-cxW">
                     <connections>
                         <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="Ehg-4h-dXQ"/>

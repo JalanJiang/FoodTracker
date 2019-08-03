@@ -64,6 +64,15 @@ iOS 官方教程：[Start Developing iOS Apps (Swift)](https://developer.apple.c
         - Bar Button Item object - 通过拖拽可完成场景切换
         - 修改 Segue：修改动画 & 填写 Identifier
         - 添加 Cancel / Save / Add Button
+    - [x]❓ 在 MealList 中保存 Meal
+        - `MealViewController` 中：save 按钮与代码关联；配置 `prepare(for:sender:)` 函数；save 按钮在 StoryBoard 中拖入 exit；
+        - `MealTableViewController` 中定义 `unwindToMealList(sender: UIStoryboardSegue)`
+    - [x] 未输入名称时禁用保存
+        - 编辑前：`textFieldDidBeginEditing(_ textField: UITextField)`
+        - 编辑后：`textFieldDidEndEditing(_ textField: UITextField)`
+        - 定义一个函数用于判断是否禁用 button
+    - [x] Cancel 取消编辑
+        - `dismiss(animated:completion:)` 方法
 
 
 ## 一些零散的语法
