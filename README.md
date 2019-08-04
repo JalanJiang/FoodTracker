@@ -86,6 +86,14 @@ iOS 官方教程：[Start Developing iOS Apps (Swift)](https://developer.apple.c
             - `tableView(_:commit:forRowAt:)`
             - 添加 `tableView(_:canEditRowAt:)` 方法
 
+### Persist Data
+
+`NSObject` 和 `NSCoding`。
+
+- [x] 保存并加载 Meal
+    - 修改 Meal.swift 中的初始化方法并添加文件存储路径
+- [x] 保存并加载 MealList
+
 
 ## 一些零散的语法
 
