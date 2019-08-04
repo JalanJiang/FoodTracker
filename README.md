@@ -58,7 +58,7 @@ iOS 官方教程：[Start Developing iOS Apps (Swift)](https://developer.apple.c
         - `func numberOfSections(in tableView: UITableView) -> Int`
         - `func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int`
         - `func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell`
-- [ ] 实现导航
+- [x] 实现导航
     - [x] 添加 Segue - Editor > Embed In > Navigation Controller
     - [x] 配置导航
         - Bar Button Item object - 通过拖拽可完成场景切换
@@ -73,6 +73,18 @@ iOS 官方教程：[Start Developing iOS Apps (Swift)](https://developer.apple.c
         - 定义一个函数用于判断是否禁用 button
     - [x] Cancel 取消编辑
         - `dismiss(animated:completion:)` 方法
+- [ ]实现编辑和删除功能
+    - [x] 对现有菜单进行编辑
+        - MealTableView `override func prepare(for segue: UIStoryboardSegue, sender: Any?)`，识别 Segue，对目标页面的 Meal 进行赋值
+        - MealView 中 `override func viewDidLoad()` 使用**触发器**更新 Meal 数据
+        - 修改 MealTableView 中的 `func unwindToMealList(sender: UIStoryboardSegue)`（Save 按钮的操作），对编辑和新增 Meal 加以区分
+    - [x] 取消编辑
+        - ❓两种返回上级视图的方法：[如何判断UIViewController是使用pop，dismiss返回到上级视图控制器](https://blog.csdn.net/potato512/article/details/53634880)
+    - [x] 删除菜单
+        - 在 `viewDidLoad()` 中添加 Edit 按钮 `navigationItem.leftBarButtonItem = editButtonItem`
+        - 修改几个 tableView：
+            - `tableView(_:commit:forRowAt:)`
+            - 添加 `tableView(_:canEditRowAt:)` 方法
 
 
 ## 一些零散的语法
